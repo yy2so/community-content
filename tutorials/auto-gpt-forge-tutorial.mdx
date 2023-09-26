@@ -136,41 +136,6 @@ This command runs the server on http://0.0.0.0:8000 and watches for changes.
 <Img src="https://imagedelivery.net/K11gkZF3xaVyYzFESMdWIQ/241b7268-e74e-4a38-1b6c-1734becfdf00/full" alt="Agent running" caption="Agent running on http://0.0.0.0:8000" />
 
 
-
-## Using the User Interface
-
-Under the hood, the AutoGPT user interface is built with Flutter, the powerful UI toolkit from Google. This allows it to run smoothly on just about any device.
-
-See if you have Flutter installed correctly:
-
-```sh
-flutter --version
-```
-
-If you get an error, you might need to add Flutter to your PATH:
-
-1. Open the .bashrc file in your home directory (for example, /home/your-user-name/.bashrc) in a text editor.
-2. Add export PATH="$PATH:`pwd`/flutter/bin" at the end of the file.
-3. Save the .bashrc file.
-4. Restart your terminal.
-
-
-With Flutter installed, go to the root folder of the Auto-GPT and run:
-
-```sh
-./run frontend
-```
-
-This launches the app right in your Chrome browser at `localhost:5000`, and is where you'll spend most of your time as you customize the app.
-
-<Img src="https://imagedelivery.net/K11gkZF3xaVyYzFESMdWIQ/d76848bd-95c1-4b58-97a7-2ae36ba8b600/full" alt="Auto-GPT user interface" caption="Auto-GPT Flutter interface" />
-
-
-Each time you save changes, the app auto-refreshes so you can test in real-time.
-
-As you dig into the code, the app will become a custom creation all your own. Build the AI assistant you've always dreamed of!
-
-
 ## Running Tests with Benchmark
 
 To evaluate your agent's capabilities and performance, AutoGPT-Forge includes a comprehensive benchmarking suite.
