@@ -1,66 +1,55 @@
 ---
-title: "Embed"
+title: "Cohere Embed"
 author: "Cohere"
-description: "Gain more in-depth insights into language through numerical representation. Cohere Embed categorizes and evaluates text algorithmically to quickly extract meaning. Use Cohere Embed for semantic search, topic modeling, recommendations and multilingual embedding."
+description: "Cohere Embed provides a powerful method for transforming text into high-quality numerical representations, enabling advanced NLP tasks such as semantic search, clustering, and multilingual embedding."
 ---
 
 # Cohere Embed
-Gain more in-depth insights into language through numerical representation. Cohere Embed categorizes and evaluates text algorithmically to quickly extract meaning. Use Cohere Embed for semantic search, topic modeling, recommendations and multilingual embedding.
 
-With Cohere Embed, you can embed content in more than 100 languages with high performance and accuracy.
-
+**Cohere Embed** is an advanced text representation model designed to convert text into numerical embeddings. These embeddings capture the semantic meaning of text, allowing machine learning applications to process and compare language based on meaning rather than keywords. The embeddings are essential for tasks such as **semantic search**, **topic modeling**, **recommendation systems**, and **text classification**.
 
 | General  |  |
 | --- | --- |
-| Relese date |  November 15, 2021 |
-| Author | [Cohere](https://cohere.ai/)  |
-| Documentation | https://docs.cohere.ai/reference/classify |
-| Type | Autoregressive, Transformer, Language model |
+| Release Date | November 15, 2021 |
+| Author | [Cohere](https://cohere.ai/) |
+| Documentation | [Cohere Embed Documentation](https://docs.cohere.ai/reference/embed) |
+| Type | Transformer, Embedding Model |
 
-## Start building with Cohere Embed
-To see what others are building with Cohere Embed, check out the community built [Cohere Use Cases and Applications](/apps/tech/cohere).
+For more in-depth information about Cohere and its technologies, visit our dedicated [Cohere Tech Page](https://lablab.ai/tech/cohere).
 
+## Embed and Embed Jobs
 
-### Cohere Embed Tutorials
-<TechTutorials/>
----
+Cohere's Embed models can be used through two main endpoints:
+- **[Embed](https://docs.cohere.ai/reference/embed)**: This endpoint generates embeddings from text for various NLP tasks such as estimating semantic similarity, ranking text sequences, and categorizing text.
+- **[Embed Jobs](https://docs.cohere.com/reference/embed-jobs)**: This endpoint allows for large-scale embedding tasks, such as embedding large datasets asynchronously, perfect for applications with big data requirements.
 
+Both endpoints are versatile, offering support for different languages, and enable tasks like semantic search and text classification with high performance and speed.
 
-### Awesome Cohere Embed Boilerplates
+## Embed Models
 
-Kickstart your development with a Cohere based boilerplate. Boilerplates is a great way to headstart when building your next project with Cohere.
+Cohere offers a range of embedding models optimized for different languages and tasks. The current lineup includes:
 
-* [Nextjs Boilerplate](https://github.com/lablab-ai/nextjs-cohere-boilerplate) Article summarizer Boilerplate for Nextjs, Cohere, TailwindCSS, Vercel.
-* [Streamlit Boilerplate](https://github.com/lablab-ai/streamlit-cohere-boilerplate) Hashtag generator Boilerplate for Cohere, Streamlit, Streamlit Cloud.
-* [Replit Boilerplate](https://replit.com/@ezzcodeezzlife/Cohere-Boilerplate?v=1) Generate an email on command with Co:here and Replit.
+| Model Name                    | Description                                                                               | Dimensions | Context Length | Similarity Metrics                                 | Endpoints           |
+| ----------------------------- | ----------------------------------------------------------------------------------------- | ---------- | -------------- | ------------------------------------------------ | ------------------- |
+| **embed-english-v3.0**         | A powerful model for English text, supporting classification and embeddings.              | 1024       | 512            | Cosine Similarity, Dot Product, Euclidean Distance | Embed, Embed Jobs   |
+| **embed-english-light-v3.0**   | A smaller, faster version of the v3.0 English model with almost comparable capabilities.  | 384        | 512            | Cosine Similarity, Dot Product, Euclidean Distance | Embed, Embed Jobs   |
+| **embed-multilingual-v3.0**    | Multilingual embedding model supporting classification and embedding across 100+ languages. | 1024       | 512            | Cosine Similarity, Dot Product, Euclidean Distance | Embed, Embed Jobs   |
+| **embed-multilingual-light-v3.0** | A faster, lightweight version of the multilingual-v3.0 model with similar performance.  | 384        | 512            | Cosine Similarity, Dot Product, Euclidean Distance | Embed, Embed Jobs   |
 
----
+## Cohere Embed Resources
 
-### Awesome Cohere Embed Libraries
+Here are some resources to help you get started with your next project using Cohere Embed:
 
-A curated list of libraries and technologies to help you build great projects with Cohere.
+- **Boilerplates**: Pre-built templates to kickstart development.
+  - [Next.js Boilerplate](https://github.com/lablab-ai/nextjs-cohere-boilerplate) – Article summarizer using Next.js and Cohere.
+  - [Streamlit Boilerplate](https://github.com/lablab-ai/streamlit-cohere-boilerplate) – Hashtag generator using Streamlit and Cohere.
+- **Libraries**: 
+  - [Cohere Python](https://github.com/cohere-ai/cohere-python) – Official Python client for Cohere's NLP API.
+  - [Cohere Node.js](https://github.com/cohere-ai/cohere-node) – Node.js SDK for interacting with Cohere's API.
 
-* [Cohere Node](https://github.com/cohere-ai/cohere-node) This package provides functionality developed to simplify interfacing with the cohere.ai natural language API. This SDK provides support for both TypeScript and JavaScript Node.js projects.
-* [Cohere Go](https://github.com/cohere-ai/cohere-go) This package provides functionality developed to simplify interfacing with the cohere.ai natural language API in Go.
-* [Cohere Python](https://github.com/cohere-ai/cohere-python) This package provides functionality developed to simplify interfacing with the Cohere API in Python 3.
-* [Cohere Ruby](https://github.com/cohere-ai/cohere-ruby) This package provides functionality developed to simplify interfacing with the cohere.ai NLP API in Ruby.
+### Further Reading and Documentation
 
----
-
-### Awesome Cohere Embed resources 
-Complimentary resources that will help you build even better applications
-* [Cohere Playground](https://dashboard.cohere.ai/playground/embed) Interact with Cohere API through their playground
-* [Langchain](https://lablab.ai/tech/langchain) Toolset for building applications powered by LLM 
-* [Cohere Embed Documentation](https://docs.cohere.ai/reference/embed)
----
-
-### Cohere Sandbox
-
-Sandbox is a collection of experimental, open-source GitHub repositories that make building applications using large language models fast and easy with Cohere.
-
-* [Sandbox Introduction Blog Post](https://txt.cohere.ai/introducing-sandbox-coheres-experimental-open-source-initiative/) Sandbox aims to help build and strengthen language AI communities while enabling contributors to build more robust applications and services faster than ever.
-* [Sandbox Conversant - Github repository](https://github.com/cohere-ai/sandbox-conversant-lib) Conversational AI tooling & personas built on Cohere's LLMs.
-* [Sandbox Conversant - PyPi repository](https://pypi.org/project/conversant/) Conversational AI tooling & personas built on Cohere's LLMs.
-* [Sandbox Conversant Streamlit Demo](https://conversant.streamlit.app/) Conversational Personas using Cohere and Streamlit.
-
----
+- [Cohere Embed Documentation](https://docs.cohere.ai/reference/embed)
+- [Cohere Embed Jobs Documentation](https://docs.cohere.com/reference/embed-jobs)
+- [Cohere Playground](https://dashboard.cohere.ai/playground/embed)
+- [Cohere Blog](https://cohere.ai/blog)
